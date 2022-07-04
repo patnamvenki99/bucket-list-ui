@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+* {
+  font-family: "poppins";
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html, body, #root, .App {
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 20vw;
+}
+
+.left-panel, .right-panel {
+  height: 100%;
+  border-style: solid;
+  overflow: scroll;
+}
+
+.left-panel {
+  width: 30%;
+  margin-right: 0.2em;
+}
+
+.right-panel {
+  width: 70%;
+}
+
+.bucket-list {
+  border: solid 0.1em;
+  margin: 0.2em;
+  border-radius: 7px;
+  box-shadow: 1px 1px grey;
+  padding: 0.2em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bucket-item {
+  border: solid 0.1em;
+  margin: 0.2em;
+  border-radius: 7px;
+  box-shadow: 1px 1px grey;
+  padding: 0.2em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #22A7F0;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #22A7F0;
+}/*# sourceMappingURL=style.css.map */

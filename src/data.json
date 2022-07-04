@@ -1,0 +1,34 @@
+[
+    {
+        "id": "62b8c73809e398651fd40527",
+        "name": "Adventures",
+        "bucketItems": [
+            {
+                "id": "7c275bd1-e668-45f4-b849-f6bf1b5be19b",
+                "item": "Bungy Jump",
+                "done": true
+            },
+            {
+                "id": "c4bc1f35-dbf1-401b-8e62-6b6878e67e02",
+                "item": "Sky Diving",
+                "done": false
+            }
+        ]
+    },
+    {
+        "id": "62b8c8c409e398651fd40529",
+        "name": "Countries",
+        "bucketItems": [
+            {
+                "id": "c90e4f99-48d1-4910-87ad-f6cc5cb1a17b",
+                "item": "UK",
+                "done": true
+            },
+            {
+                "id": "8033064a-ba49-4530-9b6d-8b2196b38a02",
+                "item": "US",
+                "done": false
+            }
+        ]
+    }
+]
