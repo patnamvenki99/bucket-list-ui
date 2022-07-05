@@ -31,7 +31,7 @@ function App() {
     const response=await fetch("http://localhost:9000/bucketlist/getallbucketlists")
     return await response.json();
   }
-  
+
   async function saveStateApi(){
     return await fetch("http://localhost:9000/bucketlist/savebucketlists", {
       method:"PUT",
@@ -124,6 +124,7 @@ function App() {
               "item": e.target.value,
               "done": false
           })
+          b.done=b.bucketItems.every(b => b.done)
         }
         return b
       })
@@ -151,6 +152,7 @@ function App() {
       const newBucketListdata=bucketListData.map(b => {
         if(b.id === selectedBucketListId)
             b.bucketItems = b.bucketItems.filter(bi => bi.id !== itemId)
+            b.done=b.bucketItems.every(b => b.done)
         return b
       })
       setBucketListData(newBucketListdata)
