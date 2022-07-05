@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/bucket-list-ui/static/css/main.222450e1.css",
-    "main.js": "/bucket-list-ui/static/js/main.c1d9f2b5.js",
+    "main.js": "/bucket-list-ui/static/js/main.d6aa8d68.js",
     "static/media/pending.svg": "/bucket-list-ui/static/media/pending.0489e32a714f2fc486b1df0702dadd2f.svg",
     "static/media/done.svg": "/bucket-list-ui/static/media/done.34132d14dfa6bc3dfab487a5cae684ea.svg",
     "static/media/delete.svg": "/bucket-list-ui/static/media/delete.fd4f814d80e2e23ecb483f966d886355.svg",
     "index.html": "/bucket-list-ui/index.html",
     "main.222450e1.css.map": "/bucket-list-ui/static/css/main.222450e1.css.map",
-    "main.c1d9f2b5.js.map": "/bucket-list-ui/static/js/main.c1d9f2b5.js.map"
+    "main.d6aa8d68.js.map": "/bucket-list-ui/static/js/main.d6aa8d68.js.map"
   },
   "entrypoints": [
     "static/css/main.222450e1.css",
-    "static/js/main.c1d9f2b5.js"
+    "static/js/main.d6aa8d68.js"
   ]
 }
