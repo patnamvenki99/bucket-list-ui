@@ -19,36 +19,31 @@ function App() {
                                 setBucketListData(res)
                                 setSelectedBucketListId((res && res.length >0 && res[0].id) || "")
                               })
-                .catch(console.log("Not able to fetch api"))
+                .catch((error) => {
+                              console.log("Not able to fetch api")
+                              let res=data
+                              setBucketListData(res)
+                              setSelectedBucketListId((res && res.length >0 && res[0].id) || "")
+                            })
   }
 
   async function getDataApi(){
     const response=await fetch("http://localhost:9000/bucketlist/getallbucketlists")
-    if(response.ok){
-      return response.json()
-    }else{
-      console.log("Issue while fetching data from DB......")
-      return []
-    }
+    return await response.json();
   }
-
   
   async function saveStateApi(){
-    const response=await fetch("http://localhost:9000/bucketlist/savebucketlists", {
+    return await fetch("http://localhost:9000/bucketlist/savebucketlists", {
       method:"PUT",
       headers:{"content-type":"application/json"},
       body:JSON.stringify(bucketListData)
     })
-    if(response.ok){
-      alert("Saved succesfully")
-    }else{
-      console.log("Issue while saving data to DB......")
-      alert("Issue with backend, autosaved in local storage...")
-    }
   }
 
   function saveData(e){
-    saveStateApi().catch(alert("Issue with backend, autosaved in local storage..."))
+    saveStateApi()
+    .catch(error => alert("Issue with backend, autosaved in local storage..."))
+    .then(() => alert("Saved succesfully to DB"))
   }
 
   function changeBucketItem(itemId){
